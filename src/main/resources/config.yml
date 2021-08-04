@@ -1,0 +1,15 @@
+settings:
+  # If you wish to have random announcements enabled,
+  # if false, they will be sent from top to bottom.
+  random-announcements: true
+  # Timer at which the plugin picks and sends announcements (in seconds)
+  announcement-timer: 300
+  # To allow for multiple line announcements, each announcement must be started in ASCENDING order
+  # starting from 1, example shown below.
+  announcements:
+    '1':
+      - "this is a test!"
+      - "this is a test!"
+      - "this is a test!"
+    '2':
+      - "this is another test!"

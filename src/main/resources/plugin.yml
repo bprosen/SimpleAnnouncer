@@ -1,0 +1,10 @@
+name: SimpleAnnouncer
+main: me.xxben.simpleannouncer.SimpleAnnouncer
+author: xxBen
+description: "Announcements Made Simple"
+version: 1.0
+
+commands:
+  simpleannouncer:
+    description: Main Command
+    aliases: [sannouncer, announcer]
