@@ -5,6 +5,6 @@ description: "Announcements Made Simple"
 version: 1.0
 
 commands:
-  simpleannouncer:
+  announcer:
     description: Main Command
-    aliases: [sannouncer, announcer]
+    aliases: [sannouncer, simpleannouncer]

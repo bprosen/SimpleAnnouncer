@@ -38,7 +38,7 @@ public class SimpleAnnouncer extends JavaPlugin {
     }
 
     private void registerCommands() {
-        getCommand("simpleannouncer").setExecutor(new SimpleAnnouncerCMD());
+        getCommand("announcer").setExecutor(new SimpleAnnouncerCMD());
     }
 
     // enable and load all managers

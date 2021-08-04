@@ -17,7 +17,7 @@ public class SimpleAnnouncerCMD implements CommandExecutor {
         // command to announce to all online players any string
         if (a.length >= 1 && a[0].equalsIgnoreCase("announce")) {
 
-            String announcement = String.join(" ", Arrays.copyOfRange(a, 2, a.length));
+            String announcement = String.join(" ", Arrays.copyOfRange(a, 1, a.length));
             Bukkit.getOnlinePlayers().forEach(player -> player.sendMessage(Utils.translate(announcement)));
         } else if (a.length == 1 && a[0].equalsIgnoreCase("reload")) {
             // attempt to reload config
@@ -44,8 +44,8 @@ public class SimpleAnnouncerCMD implements CommandExecutor {
 
     private void sendHelp(CommandSender sender) {
         sender.sendMessage(Utils.translate("&4&lSimple Announcer Help"));
-        sender.sendMessage(Utils.translate(" &8> &c/simpleannouncer announce (Announcement...) &7- Announce to online players with color"));
-        sender.sendMessage(Utils.translate(" &8> &c/simpleannouncer reload &7- Reloads from config (restarts scheduler)"));
-        sender.sendMessage(Utils.translate(" &8> &c/simpleannouncer help &7- Displays this page"));
+        sender.sendMessage(Utils.translate(" &8> &c/announcer announce (Announcement...) &4- &7Announce to online players with color"));
+        sender.sendMessage(Utils.translate(" &8> &c/announcer reload &4- &7Reloads from config (restarts announcement timer)"));
+        sender.sendMessage(Utils.translate(" &8> &c/announcer help &4- &7Displays this page"));
     }
 }
